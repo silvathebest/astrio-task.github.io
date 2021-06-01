@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 480px;
+    max-height: 220px;
+    margin: 30px auto;
+
+}
+
+.slider {
+    width: 480px;
+    height: 220px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.slider-line {
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+    height: 220px;
+}
+
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background: #333333;
+    padding: 0 12px;
+    border-radius: 3px;
+    top: 78%;
+    width: auto;
+    margin: 0 12px;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
