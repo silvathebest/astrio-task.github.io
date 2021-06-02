@@ -8,14 +8,13 @@
     max-width: 480px;
     max-height: 220px;
     margin: 30px auto;
-
 }
 
 .slider {
     width: 480px;
     height: 220px;
     overflow: hidden;
-    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .slider-line {
@@ -25,7 +24,8 @@
     height: 220px;
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
     cursor: pointer;
     position: absolute;
     font-size: 30px;
@@ -46,4 +46,3 @@
 .next-btn:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
-

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 480px;
+    margin: 20px auto;
+}
+
+.wrapper {
+    width: 145px;
+    border: 3px solid #fff;
+    position: relative;
+}
+
+.wrapper:hover {
+    border: 3px solid #eb5c3e;
+    border-bottom: none;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+    justify-content: center;
+}
+
+.shop-item {
+    font-size: 13px;
+    margin: 10px 5px;
+}
+
+.wrapper:hover .shop-item .to-cart-btn {
+    background: #eb5c3e;
+}
+
+.wrapper:hover .shop-item .stars {
+    color: #eb5c3e;
+}
+
+.wrapper:after {
+    content: "When youre dress-hunting, you want to find something thats fun, comfortable, flattering, and uniquely you! So, why not start with a sundress? They always brighten up the environment around you and inspire positivity wherever you go! Looking for some color to brighten up your day? Check out the cotton sundresses.";
+    font-size: 11px;
+    color: #636363;
+    position: absolute;
+    border: 3px solid #eb5c3e;
+    border-top: none;
+    width: 125px;
+    left: -2%;
+    z-index: 1;
+    padding: 2px 10px 5px;
+    word-wrap: break-word;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.wrapper:hover:after {
+    visibility: visible;
+}
+
+.item-name {
+    height: 55px;
+}
+
+.bottom-wrapper {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-cart-btn {
+    cursor: pointer;
+    background: #3a3a3a;
+    color: white;
+    font-size: 12px;
+    padding: 10px 5px;
+}
+
+.dollar {
+    font-weight: bold;
+}
+
+.main-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cents {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.stars-block {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 0.1em;
+    margin: 30px 0 20px;
+}
+
+.stars {
+    background: #fff;
+    color: #3a3a3a;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 350px;
+    }
+}
