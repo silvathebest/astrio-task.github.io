@@ -1,0 +1,21 @@
+body {
+    margin: 100px auto;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+    background: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    margin: 10px;
+    width: 90%;
+}
+
+a:visited {
+    color: #fff;
+}

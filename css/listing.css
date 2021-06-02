@@ -41,7 +41,7 @@
 }
 
 .wrapper:after {
-    content: "When youre dress-hunting, you want to find something thats fun, comfortable, flattering, and uniquely you! So, why not start with a sundress? They always brighten up the environment around you and inspire positivity wherever you go! Looking for some color to brighten up your day? Check out the cotton sundresses.";
+    content: attr(description);
     font-size: 11px;
     color: #636363;
     position: absolute;
