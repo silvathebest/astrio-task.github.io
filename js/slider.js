@@ -1,5 +1,5 @@
-const slider = document.querySelector('.slider-line')
-const images = document.querySelectorAll('.slider .slider-line img')
+const slider = document.querySelector('.slider__line')
+const images = document.querySelectorAll('.slider .slider__line img')
 
 let count = 0
 
@@ -24,14 +24,14 @@ window.addEventListener('resize', init)
 
 init()
 
-document.querySelector('.prev-btn').addEventListener('click', () => {
+document.querySelector('.slider__prev-btn').addEventListener('click', () => {
     count--
 
     if (count < 0) count = images.length - 1
 
     rollSlider()
 })
-document.querySelector('.next-btn').addEventListener('click', () => {
+document.querySelector('.slider__next-btn').addEventListener('click', () => {
     count++
 
     if (count >= images.length) count = 0

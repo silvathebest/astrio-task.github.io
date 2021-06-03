@@ -17,15 +17,15 @@
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.slider-line {
+.slider__line {
     display: flex;
     position: relative;
     transition: all ease 1s;
     height: 220px;
 }
 
-.prev-btn,
-.next-btn {
+.slider__prev-btn,
+.slider__next-btn {
     cursor: pointer;
     position: absolute;
     font-size: 30px;
@@ -38,11 +38,11 @@
     margin: 0 12px;
 }
 
-.next-btn {
+.slider__next-btn {
     right: 0;
 }
 
-.prev-btn:hover,
-.next-btn:hover {
+.slider__prev-btn:hover,
+.slider__next-btn:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }

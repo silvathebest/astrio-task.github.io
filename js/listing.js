@@ -64,7 +64,7 @@ var data = [{
 ]
 
 const renderItem = () => {
-    document.querySelector('.item-wrapper').innerHTML += fillListing()
+    document.querySelector('.items').innerHTML += fillListing()
 }
 
 /**
@@ -77,18 +77,18 @@ const fillListing = () => {
     data.forEach((item) => {
         output += `
     <div class="wrapper" description="${item.description}">
-        <div class="shop-item">
+        <div class="item-content">
             <img src="${item.img}" alt="item">
-            <p class="item-name">${item.name}</p>
-            <div class="bottom-wrapper">
-                <div class="price-wrapper">
-                    <span class="dollar">$</span>
-                    <span class="main-price">${item.price ? item.price.toFixed(0): '99'}.</span>
-                    <span class="cents">${calculateCents(item.price)}</span>
+            <p class="item-content__name">${item.name}</p>
+            <div class="item-content__bottom-wrapper">
+                <div class="item-content__price-wrapper">
+                    <span class="item-content__dollar">$</span>
+                    <span class="item-content__main-price">${item.price ? item.price.toFixed(0): '99'}.</span>
+                    <span class="item-content__cents">${calculateCents(item.price)}</span>
                 </div>
-                <div><a class="to-cart-btn">Add to cart</a></div> 
+                <div><a class="item-content__to-cart-btn">Add to cart</a></div> 
             </div>
-            <h2 class="stars-block"><span class="stars">${'&#9733;'.repeat(item.stars)}</span></h2>
+            <h2 class="item-content__stars-block"><span class="item-content__star">${'&#9733;'.repeat(item.stars)}</span></h2>
         </div>
     </div>`
     })
