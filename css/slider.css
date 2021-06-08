@@ -24,6 +24,10 @@
     height: 220px;
 }
 
+.slider__line img {
+    object-fit: contain;
+}
+
 .slider__prev-btn,
 .slider__next-btn {
     cursor: pointer;

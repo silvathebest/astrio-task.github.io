@@ -76,7 +76,7 @@ const fillListing = () => {
 
     data.forEach((item) => {
         output += `
-    <div class="wrapper" description="${item.description}">
+    <div class="wrapper">
         <div class="item-content">
             <img src="${item.img}" alt="item">
             <p class="item-content__name">${item.name}</p>
@@ -89,6 +89,7 @@ const fillListing = () => {
                 <div><a class="item-content__to-cart-btn">Add to cart</a></div> 
             </div>
             <h2 class="item-content__stars-block"><span class="item-content__star">${'&#9733;'.repeat(item.stars)}</span></h2>
+            <span class="item-content__description">${item.description}</span>
         </div>
     </div>`
     })
